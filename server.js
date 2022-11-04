@@ -7,13 +7,9 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/api/:name', (req, res) => {
+app.get('/data/authors.json:name', (req, res) => {
     const authorName = req.params.name.toLowerCase()
-    if( authors[authorName] ) {
-        res.json(authors[authorName])
-    } else {
-        res.json(authors['unknown'])
-    }
+    res.json(authorName)
     
 })
 
