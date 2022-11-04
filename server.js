@@ -7,10 +7,12 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
 })
 
-app.get('/data/authors.json:name', (req, res) => {
+app.get('/api', (req, res) => {
+    res.sendFile(__dirname + '/data/authors.json')
+})
+
+app.get('/api:name', (req,res) => {
     const authorName = req.params.name.toLowerCase()
-    res.json(authorName)
-    
 })
 
 app.listen(process.env.PORT || PORT, () => {

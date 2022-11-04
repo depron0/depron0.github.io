@@ -1,14 +1,23 @@
 {
   "name": "library-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "library API where you can look up authors; see their names, date of birth, and selected works.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/depron0/depron0.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/depron0/depron0.github.io/issues"
+  },
+  "homepage": "https://github.com/depron0/depron0.github.io#readme"
 }
