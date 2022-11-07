@@ -5,7 +5,7 @@ const fs = require('fs');
 const MongoClient = require('mongodb').MongoClient;
 
 
-MongoClient.connect('mongodb+srv://depressedKiwifruit:twKxDRwmzpdxxfmg@cluster0.pxdc0ae.mongodb.net/?retryWrites=true&w=majority', {useUnifiedTopology: true})
+MongoClient.connect('dbConnectionStr', {useUnifiedTopology: true})
     .then(client => {
         console.log(`Connected to ${dbName} Database`)
         db = client.db(dbName)
@@ -13,6 +13,13 @@ MongoClient.connect('mongodb+srv://depressedKiwifruit:twKxDRwmzpdxxfmg@cluster0.
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))
+app.use(express.urlencoded({ extended: true }))
+app.use(express.json())
+
+
+app.get('/', (req, res) => {
+    db.collection('authors').find().toArray()
+})
 
 /* app.get('/', (req, res) => {
     res.sendFile(__dirname + '/index.html')
