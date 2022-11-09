@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library API</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Authors</h1>
+    <ul class="authors">
+    <% for(let i = 0; i < info.length; i++){%>
+        <li class="author">
+            <h3>Name:</h3>
+            <span><%= info[i].name %></span>
+            <h3>Full Name:</h3>
+            <span><%= info[i].fullName %></span>
+            <h3>Born:</h3>
+            <span><%= info[i].birthYear %></span>
+            <h3>Selected Works:</h3>
+            <span><%= info[i].selectedWorks %></span>
+        </li>
+    <% } %>
+    </ul>
+
+
+    <h2>Add an Author:</h2>
+
+    <form action="/addAuthor" method="POST">
+        <input type="text" placeholder="Name" name="name">
+        <input type="text" placeholder="Full Name" name="fullName">
+        <input type="text" placeholder="Born" name="birthYear">
+        <input type="text" placeholder="Selected Works" name="selectedWorks">
+        <input type="submit">
+    </form>
+
+
+    <script src='js/main.js'></script>
+</body>
+</html>
