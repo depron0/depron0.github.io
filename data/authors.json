@@ -1,5 +1,40 @@
 [
     {
+        "william shakespeare": {
+            "fullName": "William Shakespeare",
+            "birthYear": "1564",
+            "selectedWorks": ["Romeo and Juliet", "A Midsummer Night's Dream", "Hamlet", "Macbeth"]
+        }
+    },
+    {
+        "jane austen": {
+            "fullName": "Jane Austen",
+            "birthYear": "16 December 1775",
+            "selectedWorks": ["Sense and Sensibility", "Pride and Prejudice", "Mansfield Park", "Emma"]
+        }
+    },
+    {
+        "lewis carroll": {
+            "fullName": "Charles Lutwidge Dodgson",
+            "birthYear": "27 January 1832",
+            "selectedWorks": ["Alice's Adventures in Wonderland", "Through the Looking-Glass", "What the Tortoise Said to Achilles"]
+        }
+    },
+    {
+        "virginia woolf": {
+            "fullName": "Adeline Virginia Woolf",
+            "birthYear": "25 January 1882",
+            "selectedWorks": ["Mrs Dalloway", "To the Lighthouse", "A Room of One's Own", "Orlando"]
+        }
+    },
+    {
+        "agatha christie": {
+            "fullName": "Dame Agatha Mary Clarissa Christie",
+            "birthYear": "15 September 1890",
+            "selectedWorks": ["Murder on the Orient Express", "Death on the Nile", "And Then There Were None"]
+        }
+    },
+    {
         "j.r.r. tolkien" : {
             "fullName": "John Ronald Reuel Tolkien",
             "birthYear": "3 January 1892",
@@ -7,10 +42,31 @@
        }
     },
     {
-        "lewis carroll": {
-            "fullName": "Charles Lutwidge Dodgson",
-            "birthYear": "27 January 1832",
-            "selectedWorks": ["Alice\"s Adventures in Wonderland", "Through the Looking-Glass", "What the Tortoise Said to Achilles"]
+        "c.s. lewis": {
+            "fullName": "Clive Staples Lewis",
+            "birthYear": "29 November 1898",
+            "selectedWorks": ["The Chronicles of Narnia", "The Screwtape Letters", "The Space Trilogy"]
+        }
+    },
+    {
+        "roald dahl": {
+            "fullName": "Roald Dahl",
+            "birthYear": "13 September 1916",
+            "selectedWorks": ["Charlie and the Chocolate Factory", "Matilda", "The Witches", "Fantastic Mr Fox"]
+        }
+    },    
+    {
+        "stephen king": {
+            "fullName": "Stephen Edwin King",
+            "birthYear": "21 September 1947",
+            "selectedWorks": ["Carrie", "The Shining", "The Green Mile"]
+        }
+    },
+    {
+        "dan brown": {
+            "fullName": "Daniel Gerhard Brown",
+            "birthYear": "22 June 1964",
+            "selectedworks": ["The Da Vinci Code", "Angels & Demons", "Digital Fortress"]
         }
     },
     {
