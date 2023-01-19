@@ -1,3 +1,7 @@
+body{
+    background: ivory;
+}
+
 li {
     list-style-type: none;
     padding: 2% 0;
